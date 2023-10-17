@@ -2,8 +2,9 @@
 Start a Session from Chrome Cookies. A Windows 11 Python utility which will continue an authenticated AtoZ Session initiated through a Chrome Web Browser.
 It will run for 30 days before OTP authentication has to be processed for the next 30 day session.
 
-This utility will also push notifications to your Alexa/Echo Dot devices.
+This utility will also push notifications to your Alexa/Echo Dot devices of any job opportunties which appear on AtoZ.
 
+## Requirements
 
 Make sure you install Python 3.9 or greater on your Windows 11 system (along with pip3)
 
