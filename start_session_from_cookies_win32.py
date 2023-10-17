@@ -186,7 +186,7 @@ def login(session, username, password):
         # We don't handle this - direct user to use the Browser for 30 day authentication
         logging.info("Session has probably finished - you need to reauthenicate on your webbrowser")
  
-def announce_opportunties(announcement):
+def announce_opportunities(announcement):
     print(f"announce_opportunties: '{announcement}'")
     res = requests.post("https://api.notifymyecho.com/v1/NotifyMe",
             json = {
@@ -275,7 +275,7 @@ if __name__ == '__main__':
                 # notifications when those numbers increase and not decrease.
                
                 if (num_active_VETs + num_active_VTOs >= 0):
-                    announce_opportunties(f'There are {num_active_VETs} active VETs and {num_active_VTOs} active VTOs')
+                    announce_opportunities(f'There are {num_active_VETs} active VETs and {num_active_VTOs} active VTOs')
 
                 last_hash = opportunities_hash
                 last_hashes['last_hash'] = last_hash
