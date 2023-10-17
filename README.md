@@ -48,7 +48,8 @@ Run the script
 
 **python3 start_session_from_cookies_win32.py**
 
-### It is imperative you are not running your Chrome browser in the background at the very start of running this script)
+### It is imperative you are not running your Chrome browser in the background at the very start of running this script!
+
 
 
 
