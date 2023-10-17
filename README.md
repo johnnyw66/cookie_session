@@ -6,6 +6,10 @@ This utility will also push notifications to your Alexa/Echo Dot devices of any 
 
 ## Requirements
 
+You need to run this script on a Windows 11 OS. (I do have a Mac version of this script).
+
+You need to have Chrome Web Browser running on your Operating system.
+
 Make sure you install Python 3.9 or greater on your Windows 11 system (along with pip3)
 
 Install the following packages pickle, pycryptodome and pywin32 by issusing the following commands on a command terminal -
