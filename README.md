@@ -27,11 +27,12 @@ Read the document **Amazon-Alexa-Access-Code-Guide.pdf** found in the docs folde
 
 Make sure you copy your token into your configure.py file.
 
-Run the test script 'testnotify.py' from the command console. 
+Run the test script **testnotify.py** from the command console. 
 
 **python3 testnotify.py**
 
-If you've registered your skill correctly and copied your token into configure.py - you should get a notification.
+If you've registered your skill correctly and copied your token into configure.py - you should get a notification on your Alexa device(s).
+
 As per instructions in the protesus documents -
 
 **Alexa device will not announce the message aloud upon receiving the notification. It will simply light up the ring indicating that there are new notifications available. Amazon for safety and privacy reasons controls this. When the ring lights up, you need to ask Alexa,**
