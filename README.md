@@ -34,9 +34,13 @@ Run the test script 'testnotify.py' from the command console.
 If you've registered your skill correctly and copied your token into configure.py - you should get a notification.
 As per instructions in the protesus documents -
 
-**Alexa device will not announce the message aloud upon receiving the notification. It will simply light up the ring indicating that there are new notifications available. Amazon for safety and
-privacy reasons controls this. When the ring lights up, you need to ask Alexa, “Alexa, Do I have any notifications?” or “Alexa, read my notifications”.
-To delete notifications from your Alexa device, you can say “Alexa, delete my notifications”.**
+**Alexa device will not announce the message aloud upon receiving the notification. It will simply light up the ring indicating that there are new notifications available. Amazon for safety and privacy reasons controls this. When the ring lights up, you need to ask Alexa,**
+
+**“Alexa, Do I have any notifications?” or “Alexa, read my notifications”.**
+
+**To delete notifications from your Alexa device, you can say**
+
+**“Alexa, delete my notifications”.**
 
 
 
