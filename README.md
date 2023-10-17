@@ -53,6 +53,17 @@ Run the script
 
 ### It is imperative you are not running your Chrome browser in the background at the very start of running this script!
 
+If you leave this script running - you will get instant notifications of any opportunities offered to you as soon as management place them on their staff management system.
+
+This is usually 20 to 30 minutes before any push/email notifications.
+
+The Python script can be modified to also claim opportunities.
+
+WATCH THIS SPACE.
+
+
+
+
 
 
 
