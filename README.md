@@ -7,24 +7,27 @@ This utility will also push notifications to your Alexa/Echo Dot devices.
 
 Make sure you install Python 3.9 or greater on your Windows 11 system (along with pip3)
 
-Install the following packages pickle, pycryptodome and pywin32 by issue the following commands on a terminal -
+Install the following packages pickle, pycryptodome and pywin32 by issusing the following commands on a command terminal -
 
 
-pip3 install pickle
-pip3 install pycryptodome
-pip3 install pywin32
+* pip3 install pickle
+* pip3 install pycryptodome
+* pip3 install pywin32
 
 
-Produce the source file configure.py (use example_configure.py as a template)
+Produce the source file **configure.py** (use **example_configure.py** as a template)
 
 Fill in the AtoZ credentials 'ATOZ_USERNAME' and 'ATOZ_PASSWORD' with your own user name and password.
 
 Fill in the 'NOTIFICATIONS_TOKEN' with your own notify-me skill token.
 
 ## Notify Me Alexa Skill
+
 Read the document **Amazon-Alexa-Access-Code-Guide.pdf** found in the docs folder (courtesey of Protesus.com). This gives instructions on how to set up notifications on your alexa devices.
+
 Make sure you copy your token into your configure.py file.
-Run the test script 'testnotify.py' from the console
+
+Run the test script 'testnotify.py' from the command console. 
 
 **python3 testnotify.py**
 
