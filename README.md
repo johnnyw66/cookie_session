@@ -64,7 +64,7 @@ Install pygame and gtts python modules.
 * pip3 install pygame
 
 
-'''
+```
 from gtts import gTTS
 from gtts.tokenizer.pre_processors import abbreviations, end_of_line
 from pygame import mixer
@@ -76,6 +76,7 @@ def announce_opportunities(text):
   tts.save('opps.mp3')
   # Play the audio
   mixer.init()
+  # Perhaps enhance this by playing some 'fanfare' prior to the audio announcement?
   mixer.music.load("opps.mp3")
   mixer.music.play()
   # Wait for the audio to be played
@@ -84,7 +85,7 @@ def announce_opportunities(text):
 
 announce_opportunities("You Have 3 active VTOs")
 
-'''
+```
 
 
 
