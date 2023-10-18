@@ -4,7 +4,7 @@ A Windows 11 Python utility which will continue an authenticated AtoZ Session in
 
 In the event of new opportunties being found the application will push notifications to your Alexa/Echo Dot devices.
 
-After the month long session, One Time Password (OTP) authentication has to be completed on your Chrome browser for the next 30 day session.
+After the month long session, One Time Password (OTP) authentication has to be completed on your Chrome browser for a new 30 day session.
 
 
 ## Requirements
