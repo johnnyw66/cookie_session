@@ -26,11 +26,14 @@ After completing your Python installation - install the python libraries pickle,
 * pip3 install pywin32
 
 
-Produce the source file **configure.py** (use **example_configure.py** as a template)
+Produce the source file **configure.py**. Use **example_configure.py** as a template, copying this to make **configure.py**.
+
+Open your new **configure.py** in your favourite text editor.
 
 Fill in the AtoZ credentials 'ATOZ_USERNAME' and 'ATOZ_PASSWORD' with your own user name and password.
 
-Fill in the 'NOTIFICATIONS_TOKEN' with your own notify-me skill token.
+Fill in the 'NOTIFICATIONS_TOKEN' with your own notify-me skill token. See details below on what this token is used for.
+
 
 ## Notify Me Alexa Skill
 
