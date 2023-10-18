@@ -1,4 +1,4 @@
-## AtoZ Cookie Session - starting a python http session from an existing Chrome cookies database. 
+## AtoZ cookie session - starting a python http session from an existing Chrome cookies database. 
 
 A Windows 11 Python utility which will continue an authenticated AtoZ Session initiated through a Chrome Web Browser, it can run for 30 days, constantly checking for active VTOs and VETs. 
 
