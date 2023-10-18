@@ -56,7 +56,7 @@ As per instructions in the protesus documents -
 
 With minimal Python skills you can modify the routine **announce_opportunities** to use your host computer's speaker.
 
-Below is one example of a method, I found with a google search.
+Below is one example of a method I found with a google search.
 
 Install pygame and gtts python modules.
 
