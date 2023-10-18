@@ -66,24 +66,35 @@ Install pygame and gtts python modules.
 
 ```
 from gtts import gTTS
-from gtts.tokenizer.pre_processors import abbreviations, end_of_line
-from pygame import mixer
-import time
+import pygame
+import io
+import tempfile
 
 def announce_opportunities(text):
-  tts = gTTS(text, slow=False, pre_processor_funcs = [abbreviations, end_of_line]) 
-  # Save the audio in a mp3 file
-  tts.save('opps.mp3')
-  # Play the audio
-  mixer.init()
-  # Perhaps enhance this by playing some 'fanfare' prior to the audio announcement?
-  mixer.music.load("opps.mp3")
-  mixer.music.play()
-  # Wait for the audio to be played
-  time.sleep(5)
+    # Create a gTTS object and get the speech as an in-memory stream
+    tts = gTTS(text)
+    speech_stream = io.BytesIO()
+    tts.write_to_fp(speech_stream)
+
+    # Save the in-memory stream to a temporary file
+    temp_audio_file = tempfile.NamedTemporaryFile(delete=False, suffix=".mp3")
+    temp_audio_file.write(speech_stream.getvalue())
+    temp_audio_file.close()
+
+    # Load and play the audio from the temporary file
+    pygame.mixer.music.load(temp_audio_file.name)
+    pygame.mixer.music.play()
+
+    # Wait for the audio to finish
+    while pygame.mixer.music.get_busy():
+        pygame.time.Clock().tick(10)
 
 
-announce_opportunities("You Have 3 active VTOs")
+
+
+pygame.init()
+announce_opportunities("You have 1 VTO opportunity!")
+pygame.quit()
 
 ```
 
