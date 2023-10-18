@@ -1,11 +1,11 @@
 # cookie_session
-Start a session from an existing Chrome Cookies database. 
+This utilty starts a python http session from an existing Chrome Cookies database. 
 
 A Windows 11 Python utility which will continue an authenticated AtoZ Session initiated through a Chrome Web Browser.
 
 It will run for 30 days, constantly checking for active VTOs and VETs. 
 
-In the event ofnew opportunties being found the application will push notifications to your Alexa/Echo Dot devices.
+In the event of new opportunties being found the application will push notifications to your Alexa/Echo Dot devices.
 
 After the 30 day session, OTP authentication has to be processed for the next 30 day session.
 
@@ -47,9 +47,9 @@ If you've registered your skill correctly and copied your token into configure.p
 
 As per instructions in the protesus documents -
 
-**Alexa device will not announce the message aloud upon receiving the notification. It will simply light up the ring indicating that there are new notifications available. Amazon for safety and privacy reasons controls this. When the ring lights up, you need to ask Alexa,**
+**Alexa device will not announce the message aloud upon receiving the notification. It will simply make a beep and light up the ring indicating that there are new notifications available. Amazon for safety and privacy reasons controls this. When the ring lights up, you need to ask Alexa using your normal wake word,**
 
-**“Alexa, Do I have any notifications?” or “Alexa, read my notifications”.**
+**“Alexa, Do I have any notifications?”, "Alexa, What are my notifications?" or “Alexa, read my notifications”.**
 
 **To delete notifications from your Alexa device, you can say**
 
@@ -57,14 +57,15 @@ As per instructions in the protesus documents -
 
 
 
-## Running the opportunity watcher.
+## Running the AtoZ opportunity watcher.
 
+First, use Chrome to authenticate an AtoZ session using your credentials.
 
 When going through AtoZ's authentication (under a Chrome Web Browser) make sure you tick on the '30 Day Trusted Device Option'.
-When you have gone through the One Time Password stage (with an SMS sent to your registered phone) - simply close your browser.
+When you have gone through the One Time Password stage (with an SMS verification code sent to your registered phone) - simply quit your browser.
 
 
-Run the script
+Second, run the python script
 
 **python3 start_session_from_cookies_win32.py**
 
