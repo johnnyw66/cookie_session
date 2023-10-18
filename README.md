@@ -56,6 +56,39 @@ As per instructions in the protesus documents -
 
 With minimal Python skills you can modify the routine **accounce_opportunities** to use your host computer's speaker.
 
+Below is one example of a method, I found with a google search.
+
+Install pygame and gtts python modules.
+
+* pip3 install gtts
+* pip3 install pygame
+
+
+'''
+from gtts import gTTS
+from gtts.tokenizer.pre_processors import abbreviations, end_of_line
+from pygame import mixer
+import time
+
+def announce_opportunities(text):
+  tts = gTTS(text, slow=False, pre_processor_funcs = [abbreviations, end_of_line]) 
+  # Save the audio in a mp3 file
+  tts.save('opps.mp3')
+  # Play the audio
+  mixer.init()
+  mixer.music.load("opps.mp3")
+  mixer.music.play()
+  # Wait for the audio to be played
+  time.sleep(5)
+
+
+announce_opportunities("You Have 3 active VTOs")
+
+'''
+
+
+
+
 ## Running the AtoZ opportunity watcher.
 
 First, use Chrome to authenticate an AtoZ session using your credentials.
