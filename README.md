@@ -1,13 +1,10 @@
-# cookie_session
-This utilty starts a python http session from an existing Chrome Cookies database. 
+# AtoZ Cookie Session - starts a python http session from an existing Chrome Cookies database. 
 
-A Windows 11 Python utility which will continue an authenticated AtoZ Session initiated through a Chrome Web Browser.
-
-It will run for 30 days, constantly checking for active VTOs and VETs. 
+A Windows 11 Python utility which will continue an authenticated AtoZ Session initiated through a Chrome Web Browser, it can run for 30 days, constantly checking for active VTOs and VETs. 
 
 In the event of new opportunties being found the application will push notifications to your Alexa/Echo Dot devices.
 
-After the 30 day session, OTP authentication has to be processed for the next 30 day session.
+After the month long session, One Time Password (OTP) authentication has to be completed on your Chrome browser for the next 30 day session.
 
 
 ## Requirements
@@ -55,7 +52,9 @@ As per instructions in the protesus documents -
 
 **“Alexa, delete my notifications”.**
 
+## Don't have any Alexa devices?
 
+With minimal Python skills you can modify the routine **accounce_opportunities** to use your host computer's speaker.
 
 ## Running the AtoZ opportunity watcher.
 
