@@ -1,4 +1,4 @@
 while [[ true ]]; do
-  python3 start_windows32_cookie_session.py $@
+  python3 start_session_from_cookies_win32.py $@
   echo "**************** Completed Session `date` ****************"
 done
