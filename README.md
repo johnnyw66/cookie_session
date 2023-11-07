@@ -40,7 +40,7 @@ Fill in the **NOTIFICATIONS_TOKEN** with your own notify-me skill token. See det
 
 Read the document **Amazon-Alexa-Access-Code-Guide.pdf** found in the docs folder (courtesey of Protesus.com). This gives instructions on how to set up notifications on your alexa devices.
 
-Make sure you copy your token into your configure.py file.
+Make sure you copy your token into your **configure.py** file.
 
 Run the test script **testnotify.py** from the command console. 
 
