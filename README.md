@@ -121,7 +121,7 @@ Second, run the DOS batch script
 
 Currently - there is no clean mechanism to notify you of the need to go through the OTP process. 
 
-Every 30 days you will need to stop this script, use your Chrome browser to go through the OTP stage - before running the batch script.
+Every 30 days you will need to stop this script, use your Chrome browser to go through the OTP stage - before re-running the script.
 
 
 ### It is imperative you are not running your Chrome browser in the background at the very start of running this script!
