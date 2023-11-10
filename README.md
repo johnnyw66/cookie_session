@@ -119,6 +119,11 @@ Second, run the DOS batch script
 
 **cookie_session.bat**
 
+Currently - there is no clean mechanism to notify you of the need to go through the OTP process. 
+
+Every 30 days you will need to stop this script, use your Chrome browser to go through the OTP stage - before running the batch script.
+
+
 ### It is imperative you are not running your Chrome browser in the background at the very start of running this script!
 
 If you leave this script running - you will get instant notifications of any opportunities offered to you as soon as management place them on their staff management system, usually 20 to 30 minutes before any push/email notifications.
