@@ -115,7 +115,7 @@ When going through AtoZ's authentication (under a Chrome Web Browser) make sure 
 When you have gone through the One Time Password stage (with an SMS verification code sent to your registered phone) - simply quit your browser.
 
 
-Second, run the DOS batch script
+Second, from a terminal command line, run the DOS batch script
 
 **cookie_session.bat**
 
