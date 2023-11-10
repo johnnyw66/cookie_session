@@ -115,9 +115,9 @@ When going through AtoZ's authentication (under a Chrome Web Browser) make sure 
 When you have gone through the One Time Password stage (with an SMS verification code sent to your registered phone) - simply quit your browser.
 
 
-Second, run the python script
+Second, run the DOS batch script
 
-**python3 start_session_from_cookies_win32.py**
+**cookie_session.bat**
 
 ### It is imperative you are not running your Chrome browser in the background at the very start of running this script!
 
