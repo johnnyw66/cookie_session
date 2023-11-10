@@ -1,4 +1,6 @@
 configure.py
 __pycache__
 pubtest.sh
+chrome.py
+*.pickle
 
