@@ -25,6 +25,8 @@ After completing your Python installation - install the python libraries pickle,
 * pip3 install pickle
 * pip3 install pycryptodome
 * pip3 install pywin32
+* pip3 install requests
+
 
 
 Produce the source file **configure.py**. Use **example_configure.py** as a template, copying this to make **configure.py**.
