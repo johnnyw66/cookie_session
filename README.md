@@ -107,6 +107,9 @@ pygame.quit()
 ```
 
 
+## NEW - Make your Smart Speaker announce opportunities - See the README.md in the virtual_button directory
+
+You could also modify this code to make your smart speaker instant annoucements by enabling the Alexa 'Virtual Buttons' Skill.
 
 
 ## Running the AtoZ opportunity watcher.
