@@ -62,7 +62,7 @@ As per instructions in the protesus documents -
 
 ## Don't have any Alexa devices?
 
-With minimal Python skills you can modify the routine **announce_opportunities** to use your host computer's speaker.
+With minimal Python skills you can modify the routine **notify_opportunities** to use your host computer's speaker.
 
 Below is one example of a method I found with a google search.
 
@@ -78,7 +78,7 @@ import pygame
 import io
 import tempfile
 
-def announce_opportunities(text):
+def notify_opportunities(text):
     # Create a gTTS object and get the speech as an in-memory stream
     tts = gTTS(text)
     speech_stream = io.BytesIO()
@@ -101,7 +101,7 @@ def announce_opportunities(text):
 
 
 pygame.init()
-announce_opportunities("You have 1 VTO opportunity!")
+notify_opportunities("You have 1 VTO opportunity!")
 pygame.quit()
 
 ```
