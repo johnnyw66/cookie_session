@@ -65,18 +65,11 @@ Next choose All Devices and scroll through the list to find your Virtual Button 
 
 ## Restful API Example 
 
+If you've set up a routine on your Alexa app and have your API token - you are ready to start some Python coding to set off an announcement on your smart speaker.
+
 Make sure Python is set up to use the 'requests' library.
 
 **pip3 install requests**
-
-
-
-
-Alexa announcements can happen on all your Alexa devices.
-
-So - have something like
-
-**'YOU HAVE OPPORTUNTIES - HURRY UP AND MAKE A CLAIM.'**
 
 
 
