@@ -20,11 +20,11 @@ https://www.patreon.com/VirtualButtons/posts
 
 It's usually a paid for service but can just register for ONE virtual button for free. We use this free button to trigger an Alexa ANNOUNCEMENT (rather than use Notify-Me).
 
-Once you've signed up for 'Virtual Buttons Skill' - you will have one Free 'Virtual Button' which can be used to turn on Smart Home Devices as well as make announcements on your Alexa/Echo Dot speakers. Look out for a email from the Virtual Button Service - containing your API token/key. You need to use this in your Python code.
+Once you've signed up for 'Virtual Buttons Skill' - you will have one Free 'Virtual Button' which can be used to turn on Smart Home Devices as well as make announcements on your Alexa/Echo Dot speakers. Look out for an email from the Virtual Button Service - containing your API token/key. You need to use this in your Python code.
 
 ## Setting up Your Smart Speaker
 
-First you need to make sure that the Virtual Button appears in your list of 'Home Devices' -
+I'm assuming you have already signed up for the virtual button service. First you need to make sure that the Virtual Button appears in your list of 'Home Devices' -
 
 Say to your Echo Dot/Alexa Speaker:-
 
