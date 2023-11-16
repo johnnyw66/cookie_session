@@ -107,7 +107,7 @@ pygame.quit()
 ```
 
 
-## NEW - Make your Smart Speaker announce opportunities - See the README.md in the virtual_button directory
+## **NEW** - Make your Smart Speaker announce opportunities - See the README.md in the virtual_button directory
 
 You could also modify this code to have your smart speaker make instant annoucements by enabling the Alexa 'Virtual Buttons' Skill.
 
