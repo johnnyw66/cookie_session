@@ -107,7 +107,7 @@ pygame.quit()
 ```
 
 
-**NEW** 16 Nov 2024 - Make your Smart Speaker announce opportunities - See the **README.md** in the **virtual_button** directory
+**NEW** 16 Nov 2024 - Make your Smart Speaker announce opportunities - See **README.md** in the **virtual_button** directory
 
 
 
