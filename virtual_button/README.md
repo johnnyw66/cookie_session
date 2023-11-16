@@ -55,6 +55,13 @@ Tap the more/menu icon (usually lower right part of screen) and select Routines
 
 You should now be ready to run some python code to trigger the virtual button and make an announcement...
 
+### My Alexa Device keeps telling me "Somebody is at Virtual Button..." whenever I get an announcement.
+
+To turn this off, open your Alexa App and choose the Devices icon in the lower right part of the screen.
+
+Next choose All Devices and scroll through the list to find your Virtual Button XX device(s), select it, then switch the Doorbell Press Announcements slider to the off position. You might have to do this for each Virtual Button you own.
+
+
 
 ## Restful API Example 
 
