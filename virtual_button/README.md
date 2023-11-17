@@ -14,13 +14,11 @@ Instead you would have your smart speaker announce something like -
 
 ## Signing up for the Virtual Button Service
 
-Follow the instructions 
+Follow the instructions on https://www.patreon.com/VirtualButtons/posts
 
-https://www.patreon.com/VirtualButtons/posts
+The is usually a paid-for service but can just register for ONE virtual button for free. You use this free button to trigger an Alexa ANNOUNCEMENT (rather than use Notify-Me).
 
-It's usually a paid for service but can just register for ONE virtual button for free. We use this free button to trigger an Alexa ANNOUNCEMENT (rather than use Notify-Me).
-
-Once you've signed up for 'Virtual Buttons Skill' - you will have one Free 'Virtual Button' which can be used to turn on Smart Home Devices as well as make announcements on your Alexa/Echo Dot speakers. Look out for an email from the Virtual Button Service - containing your API token/key. You need to use this in your Python code.
+Once you've signed up for **Virtual Buttons Skill** - you will have one free **Virtual Button** ('Virtual Button 1') which can be used to turn on Smart Home Devices as well as make announcements on your Alexa/Echo Dot speakers. After signing-up, look out for an email from the Virtual Button Service - containing your API token/key. You need to use this in your Python code.
 
 ## Setting up Your Smart Speaker
 
