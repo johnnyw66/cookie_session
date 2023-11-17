@@ -2,9 +2,9 @@
 
 Instead of using 'Notify-Me' - (which is useful for making 'dynamic' notifications) you may want to opt for yor smart speaker to make instant warnings on any AtoZ opportunities that appear. You can do this by making use of the Echo Dot **routines** and the 'announce' feature. 
 
-Announcement messages are instant - but have the disadvantage that once triggered and spoken - are lost forever. It is possible to use both Notify-Me and Announcements together.'Announcements' come from running **routines** initiated in your phone's Alexa app and can not be 'dynamic'.
+Announcement messages are instant - but have the disadvantage that once triggered and spoken - are lost forever. It is possible to use both Notify-Me and Announcements together. 'Announcements' come from running **routines** initiated in your phone's Alexa app and can not be 'dynamic'.
 
-So, it is very difficult to say pharses like 
+This means it is very difficult to say pharses like 
 
 'You have 4 VET opportunties and 1 VTO opportunity' - (You would need to buy lots of Virtual buttons to do this!)
 
