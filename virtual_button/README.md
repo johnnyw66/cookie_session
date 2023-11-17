@@ -88,7 +88,7 @@ When you have saved your modified source - run it!
 
 It should respond with status code **200** or **202**.
 
-If you get **500** - check your API token/key.
+If the response is **500** - check your API token/key.
 
 
 
