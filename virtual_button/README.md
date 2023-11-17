@@ -57,7 +57,7 @@ You should now be ready to run some python code to trigger the virtual button an
 
 To turn this off, open your Alexa App and choose the Devices icon in the lower right part of the screen.
 
-Next choose All Devices and scroll through the list to find your Virtual Button XX device(s), select it, then switch the Doorbell Press Announcements slider to the off position. You might have to do this for each Virtual Button you own.
+Next choose All Devices and scroll through the list to find your Virtual Button XX device(s), select it, then switch the **Doorbell Press Announcements** slider to the off position. You might have to do this for each Virtual Button you own.
 
 
 
