@@ -1,6 +1,6 @@
 ## Making your Smart Speaker - announce AtoZ opportunties - using the Virtual Buttons Alexa skill.
 
-Instead of using 'Notify-Me' - (which is useful for making 'dynamic' notifications') you may want to opt for yor smart speaker to make instant warnings on any AtoZ opportunities that appear. You can do this by making use of the Echo Dot **routines** and the 'announce' feature. 
+Instead of using 'Notify-Me' - (which is useful for making 'dynamic' notifications) you may want to opt for yor smart speaker to make instant warnings on any AtoZ opportunities that appear. You can do this by making use of the Echo Dot **routines** and the 'announce' feature. 
 
 Announcement messages are instant - but have the disadvantage that once triggered and spoken - are lost forever. It is possible to use both Notify-Me and Announcements together.'Announcements' come from running **routines** initiated in your phone's Alexa app and can not be 'dynamic'.
 
