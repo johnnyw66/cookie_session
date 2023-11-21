@@ -134,14 +134,15 @@ def complete_relay_state(session,response_text):
                 }
             )
     csrf_token = findValue('csrf-token', response.text, valueToken="content")
-    search_pattern = 'data-employee-id\s*=\s*\'([^\']+)\''
+    search_pattern = r"data-employee-id\s*=\s*'([^']+)'"
+
     employee_id =re.search(search_pattern, response.text).group(1)
 
     logging.info(f'complete_relay_state: csrf_token:{csrf_token} employee-id:{employee_id}')
     return csrf_token,employee_id
 
 def findValue(key_value,string_value,index=0,nameToken="name",valueToken="value"):
-    pattstr = f'{nameToken}'+'\s*=\s*\\"' + f'{key_value}' + '\\"\s+'+ f'{valueToken}' +'\s*=\s*\"([^"]+)\\"'
+    pattstr = f'{nameToken}'+ r'\s*=\s*"' + f'{key_value}' + r'"\s+'+ f'{valueToken}' + r'\s*=\s*"([^"]+)"'
     #print(f"Pattern String = {pattstr}\n")
     find=re.search(pattstr,string_value)
     return find.group(1)
