@@ -145,7 +145,81 @@ Looking at the new AtoZ website - it appears that the mechanisim for retrieving 
 
 
 
+```
 
+def get_active_opportunities(session, employee_id):
+
+    graphql_url = f"https://atoz-api-us-east-1.amazon.work/graphql?employeeId={employee_id}"
+
+    query = """ query OppsPage($timeRange: DateTimeRangeInput!, $opportunityTypes: TypeFilter!, $filter: ShiftOpportunitiesFilter) {
+  shiftOpportunities(timeRange: $timeRange, filter: $filter) {
+    opportunities(opportunityTypes: $opportunityTypes) {
+      ...OppCard_shiftOpportunity
+      __typename
+    }
+    __typename
+  }
+}
+fragment OppCard_shiftOpportunity on ShiftOpportunity {
+  id
+  type
+  skill
+  eligibility {
+    isEligible
+    unclaimableReasonCodes
+    __typename
+  }
+  unavailability {
+    reasons
+    __typename
+  }
+  shift {
+    timeRange {
+      start
+      end
+      __typename
+    }
+    __typename
+  }
+  __typename
+}
+    """
+
+    response = session.post(url= graphql_url,
+            json = {
+                "operationName":"OppsPage",
+                'variables': {
+                    'timeRange': {
+                        'start':'2023-11-21T10:00:00.000Z',
+                        'end':'2024-01-31T10:00:00.000Z'
+                    },
+                    'filter': {
+                            'includeIneligible': False,
+                             #"unavailableReasonsToInclude": [
+                             #                               "AssociateAccepted",
+                             #                               "ShiftOpportunityCapacityMet"
+                             # ]
+                    
+                    },
+                    "opportunityTypes": {
+                            # VOLUNTARY_TIME_OFF, VOLUNTARY_EXTRA_TIME
+                            "types": [
+                                        "VOLUNTARY_TIME_OFF",
+                                        "VOLUNTARY_EXTRA_TIME",
+
+                                        ]
+                    }
+                },
+                'query':query
+
+              },
+            headers={
+                'X-Atoz-Client-Id': 'SCHEDULE_MANAGEMENT_SERVICE',
+            }
+    )
+    return response
+ 
+```
 
 
 
