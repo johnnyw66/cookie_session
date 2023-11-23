@@ -141,7 +141,7 @@ WATCH THIS SPACE.
 
 ### WARNING - 'Restful API' to be deprecated?
 
-Looking at the new AtoZ website - it appears that the mechanisim for retrieving data is made using Graph QL - so I've no idea how long the old API will be supported for. This is unfamiliar technology to me - but I have worked out how to retrieve active opportunities. See the example code below.
+Looking at the new AtoZ website - it appears that the mechanisim for retrieving data is made using **GraphQL** - so I've no idea how long the old API will be supported for. This is unfamiliar technology to me - but I have worked out how to retrieve active opportunities. See the example code below.
 
 Grabbing opportunities by GraphQL mutation will hopefully follow very shortly.
 
