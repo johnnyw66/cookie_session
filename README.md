@@ -9,7 +9,7 @@ After the month long session, One Time Password (OTP) authentication has to be c
 Currently - I have only included the Windows 11 source on this repository.
 
 **NOTE: THIS PYTHON APP DOES NOT NEED OR USE AN MQTT SMS GATEWAY**
-[https://github.com/johnnyw66/MQTT-SMS-Gateway](MQTT SMS GATEWAY)
+[https://github.com/johnnyw66/MQTT-SMS-Gateway]
 
 
 
