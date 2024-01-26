@@ -63,7 +63,7 @@ As per instructions in the protesus documents -
 
 **“Alexa, delete my notifications”.**
 
-## NEW NEW NEW JAN 2024 Voicemonkey Skill - Dynamic Annoucements 
+## NEW NEW NEW JAN 2024 Voicemonkey Skill - Dynamic Announcements 
 
 You can now make dynamic annoucements without the need for virtual buttons by signing up to a voicemonkey account - see
 testannounce.py source file and go to https://voicemonkey.io to sign up for a free account.
