@@ -1,7 +1,7 @@
 import configure
 import requests
 
-def voicemonkey_announce(announcement, speaker='annoucegroup'):
+def voicemonkey_announce(announcement, speaker='myalexaspeaker'):
     print(f"announce: '{announcement}'")
     res = requests.get("https://api-v2.voicemonkey.io/announcement",
             params = {
@@ -22,7 +22,8 @@ def notify_opportunities(announcement):
 
 def announce_opportunities(announcement):
     notify_opportunities(announcement):        
-    voicemonkey_announce(announcement,
+    voicemonkey_announce(announcement,speaker='annoucegroup')
+    
 
 
 announce_opportunities('YOU HAVE OPPORTUNTIES AVAILABLE. MAKE HASTE!', speaker='annoucegroup')
