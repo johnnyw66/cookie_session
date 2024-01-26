@@ -12,6 +12,37 @@ Instead you would have your smart speaker announce something like -
 
 'You have Opportunties'
 
+Edit: **NEW** Jan 2024. After writing the above - I have discovered a new service called 'Voice Monkeys' https://voicemonkey.io/ which allows dynamic annoucements.
+
+```
+def voicemonkey_announce(announcement):
+    logging.info(f"announce: '{announcement}'")
+    res = requests.get("https://api-v2.voicemonkey.io/announcement",
+            params = {
+            'token': configure.VOICEMONKEY_TOKEN,
+            'device': 'annoucegroup', #Typo
+            'text':announcement
+            }) 
+    logging.info(f"VoiceMonkey: {res.text}")
+
+def notifyme_announce(announcement):
+    """ Announce messages using Echo Dot Devices and the Notify-Me Skill """
+    logging.info(f"announce: '{announcement}'")
+    res = requests.post("https://api.notifymyecho.com/v1/NotifyMe",
+            json = {
+            'accessCode': configure.NOTIFICATIONS_TOKEN,
+            'notification': announcement
+            }) 
+    logging.info(f"NotifyMe: {res.text}")
+
+
+def announce(announcement):
+    voicemonkey_announce(announcement)
+    notifyme_announce(announcement)
+
+```
+
+
 ## Signing up for the Virtual Button Service
 
 Follow the instructions on https://www.patreon.com/VirtualButtons/posts
