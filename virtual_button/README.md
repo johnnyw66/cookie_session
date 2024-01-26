@@ -12,7 +12,7 @@ Instead you would have your smart speaker announce something like -
 
 'You have Opportunties'
 
-Edit: **NEW** Jan 2024. After writing the above - I have discovered a new service called 'Voice Monkeys' https://voicemonkey.io/ which allows dynamic annoucements.
+Edit: **NEW** Jan 2024. Since writing the above - I have discovered a new service called 'Voice Monkeys' https://voicemonkey.io/ which allows dynamic annoucements.
 
 ```
 def voicemonkey_announce(announcement):
