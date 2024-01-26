@@ -15,6 +15,9 @@ Instead you would have your smart speaker announce something like -
 Edit: **NEW** Jan 2024. Since writing the above - I have discovered a new service called 'Voice Monkeys' https://voicemonkey.io/ which allows dynamic annoucements.
 
 ```
+import requests
+import logging
+
 def voicemonkey_announce(announcement):
     logging.info(f"announce: '{announcement}'")
     res = requests.get("https://api-v2.voicemonkey.io/announcement",
