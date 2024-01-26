@@ -188,14 +188,24 @@ def login(session, username, password):
         logging.info("Session has probably finished - you need to reauthenicate on your webbrowser")
  
 def notify_opportunities(announcement):
-    print(f"announce_opportunties: '{announcement}'")
+    logging.info(f"announce_opportunties: '{announcement}'")
     res = requests.post("https://api.notifymyecho.com/v1/NotifyMe",
             json = {
             'accessCode': configure.NOTIFICATIONS_TOKEN,
             'notification': announcement
             }) 
-    print(res.text)
+    logging.info(res.text)
 
+def announce_opportunities(announcement, speaker='annoucegroup'):
+    logging.info(f"announce_opportunties: '{announcement}'")
+    res = requests.post("https://api-v2.voicemonkey.io/announcement",
+            parmas = {
+            'device': speaker,
+            'token': configure.VOICEMONKEY_TOKEN,
+            'text': announcement
+            }) 
+    logging.info(res.text)
+	
 if __name__ == '__main__':
 
     logging.basicConfig(format='%(name)s %(levelname)s: %(asctime)s: %(message)s', level=logging.DEBUG)
